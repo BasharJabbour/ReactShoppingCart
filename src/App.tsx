@@ -36,6 +36,7 @@ function App() {
   const handleRemoveFromCart = () => null;
 
   if (isLoading) { return <LinearProgress /> }
+  if (error) { return <div>An Error Occured.</div> }
 
   return (
     <div className="App">
