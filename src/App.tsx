@@ -35,6 +35,8 @@ function App() {
 
   const handleRemoveFromCart = () => null;
 
+  if (isLoading) { return <LinearProgress /> }
+
   return (
     <div className="App">
       Start
