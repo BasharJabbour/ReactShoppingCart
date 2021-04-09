@@ -32,7 +32,9 @@ function App() {
   const { data, isLoading, error } = useQuery<CartItemType[]>('products', getProducts);
   console.log(data)
 
-  const getTotalItems = (items: CartItemType[]) => null;
+  const getTotalItems = (items: CartItemType[]) => {
+    return items.reduce((ack: number, item) => ack + item.amount, 0)
+  }
 
   const handleAddToCart = (item: CartItemType) => null;
 
