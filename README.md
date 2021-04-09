@@ -1,3 +1,9 @@
+# What is this?
+
+This is a simple react/typescript shopping cart app that was created by following the tutorial by [Thomas Weibenfalk](https://www.youtube.com/watch?v=sfmL6bGbiN8&list=PLrLNypaT6Xi3CIru1W1337icx6fdOJcZX&index=1&t=1747s)
+
+It is a first step towards learning how to architecture and build front-ends using React. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
