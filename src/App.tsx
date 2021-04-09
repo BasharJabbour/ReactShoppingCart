@@ -16,7 +16,7 @@ export type CartItemType = {
   category: string;
   description: string;
   image: string;
-  price: string;
+  price: number;
   title: string;
   amount: number;
 }
@@ -31,7 +31,6 @@ function App() {
   const [cartOpen, setCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState([] as CartItemType[]);
   const { data, isLoading, error } = useQuery<CartItemType[]>('products', getProducts);
-  console.log(data)
 
   const getTotalItems = (items: CartItemType[]) => {
     return items.reduce((ack: number, item) => ack + item.amount, 0)
